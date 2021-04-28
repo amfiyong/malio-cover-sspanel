@@ -35,12 +35,3 @@ storage/*.*
 public/.user.ini
 
 resources/views/material/analytics.tpl
-
-.vscode
-config/.malio_config.php
-malio-noobfs.js
-malio-dev.js
-malio-release.js
-malio.js
-resources/email/template
-.i18n.php
