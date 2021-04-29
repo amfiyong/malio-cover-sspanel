@@ -361,7 +361,7 @@ class AppURI
                     }
                     $tls .= '&peer=' . $item['host'];
                 }
-                $return = ('vmess://' . Tools::base64_url_encode('chacha20-poly1305:' . $item['id'] . '@' . $item['add'] . ':' . $item['port']) . '?remarks=' . rawurlencode($item['remark']) . $obfs . $tls);
+                $return = ('vmess://' . Tools::base64_url_encode('auto:' . $item['id'] . '@' . $item['add'] . ':' . $item['port']) . '?remarks=' . rawurlencode($item['remark']) . '&alterId=' . $item['aid'] . $obfs . $tls);
                 break;
             case 'trojan':
                 $return  = ('trojan://' . $item['passwd'] . '@' . $item['address'] . ':' . $item['port']);
