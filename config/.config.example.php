@@ -252,13 +252,6 @@ $_ENV['payment_system']='none';
 $_ENV['stripe_key'] = '';
 $_ENV['stripe_webhook_endpoint_secret'] = '';
 
-# wolfpay 以下内容可以在用户中心首页下方取得 (仅在malio聚合支付系统下生效)
-$_ENV['wolfpay']=['config'=>[
-    'hid'=>'商户ID',
-    'key'=>'商户KEY',
-    'url'=>'商户API网址'
-]];
-
 # payssion
 $_ENV['payssion_api_key'] = '';
 $_ENV['payssion_secret_key'] = '';
@@ -278,13 +271,6 @@ $_ENV['f2fpay_p_id'] = '';
 $_ENV['alipay_public_key'] = '';
 $_ENV['merchant_private_key'] = '';
 $_ENV['f2fNotifyUrl'] = null;                  //自定义当面付回调地址
-
-#PaymentWall
-#此项在 malio 主题中暂未支持
-$_ENV['pmw_publickey']='';  
-$_ENV['pmw_privatekey']='';
-$_ENV['pmw_widget']='m2_1';
-$_ENV['pmw_height']='350px';
 
 #alipay,spay
 $_ENV['alipay_id'] = '';
@@ -322,30 +308,6 @@ $_ENV['idtpay']=[
 
 ];
 
-#tomatopay番茄云支付
-#使用教程:https://swapidc.fanqieui.com/?t/329.html  tg群 https://t.me/fanqiepay
-$_ENV['tomatopay'] = [
-        'wxpay'=>[
-            'mchid' => '',   // 商户号
-            'account' => '', //您在番茄云支付的登录邮箱
-            'token' => "" // 安全验证码
-        ],
-        'alipay'=>[
-            'mchid' => '',   // 商户号
-            'account' => '', //您在番茄云支付的登录邮箱
-            'token' => "" // 安全验证码
-        ],
- ];
-
-
-# flyfox
-$_ENV['flyfoxpay'] = [
-    'config' => [
-        'hid'=>'******',
-        'key'=>'********',
-        'mail'=>'*******@****.***'
-    ]
-];
 
 
 //其他面板显示设置------------------------------------------------------------------------------------------

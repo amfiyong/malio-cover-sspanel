@@ -615,24 +615,6 @@
 </div>
 {/if}
 
-{if $config['payment_system'] == 'tomatopay'}
-<div class="modal fade" tabindex="-1" role="dialog" id="tmtpay-modal">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title">{$i18n->get('payment')}</h5>
-      </div>
-      <div class="modal-body">
-        <div style="text-align: center">{$i18n->get('pay-now-modal-text')}</div>
-      </div>
-      <div class="modal-footer bg-whitesmoke br">
-        <a id="to-tmtpay" href="##" type="button" target="blank" class="btn btn-primary">{$i18n->get('continue-pay')}</a>
-      </div>
-    </div>
-  </div>
-</div>
-{/if}
-
 {if $config['payment_system'] == 'payssion'}
 <div class="modal fade" tabindex="-1" role="dialog" id="payssion-modal">
   <div class="modal-dialog" role="document">
@@ -645,24 +627,6 @@
       </div>
       <div class="modal-footer bg-whitesmoke br">
         <a id="to-payssion" href="##" type="button" target="blank" class="btn btn-primary">{$i18n->get('continue-pay')}</a>
-      </div>
-    </div>
-  </div>
-</div>
-{/if}
-
-{if $config['payment_system'] == 'flyfoxpay'}
-<div class="modal fade" tabindex="-1" role="dialog" id="flyfox-modal">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title">{$i18n->get('payment')}</h5>
-      </div>
-      <div class="modal-body">
-        <div style="text-align: center">{$i18n->get('pay-now-modal-text')}</div>
-      </div>
-      <div class="modal-footer bg-whitesmoke br">
-        <a id="to-flyfox" href="##" type="button" target="blank" class="btn btn-primary">{$i18n->get('continue-pay')}</a>
       </div>
     </div>
   </div>

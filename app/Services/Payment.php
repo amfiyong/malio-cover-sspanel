@@ -20,24 +20,10 @@ class Payment
         switch ($method) {
             case ('codepay'):
                 return new Codepay();
-            case ('paymentwall'):
-                return new PaymentWall();
-            case ('spay'):
-                return new SPay();
-            case ('f2fpay'):
-                return new AopF2F();
             case ('chenAlipay'):
                 return new ChenPay();
             case ('bitpayx'):
                 return new BitPayX(Config::get('bitpay_secret'));
-            case("tomatopay"):
-                return new TomatoPay();
-            case("flyfoxpay"):
-                return new flyfoxpay();
-            case ('payjs'):
-                return new PAYJS(Config::get('payjs_key'));
-            case ('f2fpay_payjs'):
-                return new F2Fpay_PAYJS();
             case ('stripe'):
                 return new StripePay();
             case ('payssion'):
