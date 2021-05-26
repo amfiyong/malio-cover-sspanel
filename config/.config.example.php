@@ -256,10 +256,6 @@ $_ENV['stripe_webhook_endpoint_secret'] = '';
 $_ENV['payssion_api_key'] = '';
 $_ENV['payssion_secret_key'] = '';
 
-#yft支付设置
-$_ENV['yft_secret']='';
-$_ENV['yft_accesskey']='';
-
 #codepay码支付
 #wiki地址:https://goo.gl/dRwRDi  http://t.cn/RnsWjtB
 $_ENV['codepay_id'] = '';					//码支付ID
@@ -287,26 +283,6 @@ $_ENV['zfbjk_qrcodeurl']='';
 #   客服和技术 24x7 在线支持： https://t.me/joinchat/GLKSKhUnE4GvEAPgqtChAQ
 $_ENV['bitpay_secret'] = '';
 
-# materialpay
-$_ENV['materialpay_appid']='';				//AppID
-$_ENV['materialpay_secret']='';			//AppSecret
-
-
-#PayJs
-$_ENV['payjs_mchid'] = '';
-$_ENV['payjs_key'] = '';
-
-$_ENV['idtpay']=[
-    'partner'=>"", //商户号
-    'key' =>"", //商户key
-    'sign_type'=>strtoupper('MD5'),
-    'input_charset'=>strtolower('utf-8'),
-    'subjects'=>["内存",'手抓饼'], //商品名称
-    'transport'=>'https' ,//访问模式,根据自己的服务器是否支持ssl访问，若支持请选择https；若不支持请选择http
-    'apiurl'=>'https://pay.idt.xyz/', //http开头
-    'appname'=>$_ENV['appName'],
-
-];
 
 
 

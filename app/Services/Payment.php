@@ -28,14 +28,8 @@ class Payment
                 return new StripePay();
             case ('payssion'):
                 return new Payssion();
-            case ('yftpay'):
-                return new YftPay();
             case ('malio'):
                 return new MalioPay();
-            case ("idtpay"):
-                return new IDtPay();
-            case ("custompay"):
-                return new CustomPay();
             default:
                 return null;
         }

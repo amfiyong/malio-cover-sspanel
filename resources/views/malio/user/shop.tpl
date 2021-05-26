@@ -579,24 +579,6 @@
 </div>
 {/if}
 
-{if $config['payment_system'] == 'spay'}
-<div class="modal fade" tabindex="-1" role="dialog" id="spay-modal">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title">{$i18n->get('payment')}</h5>
-      </div>
-      <div class="modal-body">
-        <div style="text-align: center">{$i18n->get('pay-now-modal-text')}</div>
-      </div>
-      <div class="modal-footer bg-whitesmoke br">
-        <a id="to-spay" href="##" target="blank" class="btn btn-primary">{$i18n->get('continue-pay')}</a>
-      </div>
-    </div>
-  </div>
-</div>
-{/if}
-
 {if $config['payment_system'] == 'codepay'}
 <div class="modal fade" tabindex="-1" role="dialog" id="codepay-modal">
   <div class="modal-dialog" role="document">
@@ -627,40 +609,6 @@
       </div>
       <div class="modal-footer bg-whitesmoke br">
         <a id="to-payssion" href="##" type="button" target="blank" class="btn btn-primary">{$i18n->get('continue-pay')}</a>
-      </div>
-    </div>
-  </div>
-</div>
-{/if}
-
-{if $config['payment_system'] == 'yftpay'}
-<div class="modal fade" tabindex="-1" role="dialog" id="yftpay-modal">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title">{$i18n->get('payment')}</h5>
-      </div>
-      <div class="modal-body">
-        <div style="text-align: center">{$i18n->get('pay-now-modal-text')}</div>
-      </div>
-      <div class="modal-footer bg-whitesmoke br">
-        <a id="to-yftpay" href="##" type="button" target="blank" class="btn btn-primary">{$i18n->get('continue-pay')}</a>
-      </div>
-    </div>
-  </div>
-</div>
-{/if}
-
-{if $config['payment_system'] == 'payjs' || $config['payment_system'] == 'f2fpay_payjs'}
-<div class="modal fade" tabindex="-1" role="dialog" id="payjs-modal">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title">{$i18n->get('open-app-to-scan-qrcode',[{$i18n->get('wechat-pay')}])}</h5>
-      </div>
-      <div class="modal-body">
-        <p>{$i18n->get('shop-dont-close-windows-hint')}</p>
-        <div id="payjs-qr" style="text-align: center"></div>
       </div>
     </div>
   </div>
